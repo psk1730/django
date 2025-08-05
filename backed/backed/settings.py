@@ -70,8 +70,8 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'backed.wsgi.application'
-WSGI_APPLICATION = 'backed.backed.wsgi.application'
+WSGI_APPLICATION = 'backed.wsgi.application'
+# WSGI_APPLICATION = 'backed.backed.wsgi.application'
 
 
 
