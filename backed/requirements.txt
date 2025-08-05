@@ -5,5 +5,5 @@
  dj-database-url 
  python-decouple
  Django
- rest_framework
+djangorestframework
 
