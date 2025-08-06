@@ -26,7 +26,7 @@ class EntryViewSet(viewsets.ModelViewSet):
     def post(self, request, *args, **kwargs):
         print("FILES:", request.FILES)
         print("DATA:", request.data)
-        return super().post(request, *args, **kwargs)
+        return super().post(request, *args, **kwargs)   # this the line required to save the data to baackend in deployement
 
 
 # Create your views here.
