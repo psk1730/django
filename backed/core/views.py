@@ -23,5 +23,10 @@ class EntryViewSet(viewsets.ModelViewSet):
             except Project.DoesNotExist:
                 pass  # handle error if needed
 
+    def post(self, request, *args, **kwargs):
+        print("FILES:", request.FILES)
+        print("DATA:", request.data)
+        return super().post(request, *args, **kwargs)
+
 
 # Create your views here.
