@@ -12,8 +12,8 @@ class Entry(models.Model):
     age = models.IntegerField()
     address = models.CharField(max_length=255)
     image = models.ImageField(upload_to='images/')
-    lat= models.CharField(max_length=10)
-    lon= models.CharField(max_length=10)
+    lat= models.FloatField(max_length=10)
+    lon= models.FloatField(max_length=10)
 
     def __str__(self):
         return f"{self.name} ({self.project.name})"
