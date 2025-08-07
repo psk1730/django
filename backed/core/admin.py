@@ -3,7 +3,7 @@ from .models import Entry, Project  # import your models
 
 @admin.register(Entry)
 class EntryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'age', 'address', 'image')
+    list_display = ('name', 'age', 'address', 'image', 'lat', 'lon')
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
